@@ -1,0 +1,150 @@
+/* bu kısmı da ikiye bölerek stilini yapıcaz */
+.intro{
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+}
+/*hap her elementin arasına ara koymamızı sağlar*/
+.i-right{
+    display: flex;
+    position: relative;
+    flex:1;
+    flex-direction: column;
+    gap:0rem;
+}
+.i-name{
+    display:flex;
+    flex-direction: column;
+}
+/*ilk olarak Hi i am kısmına stil vermek için i-name 'in ilk childini hedefliyoruz*/
+.i-name>:nth-child(1){
+    color:var(--purple1);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.i-name>:nth-child(2){
+    color:var(--);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.i-name>:nth-child(3){
+    font-weight: 100;
+    font-size: 14px;
+    color:var(--gray);
+    margin-top: 10px;
+}
+
+
+.carousel {
+  width:1100px;
+  margin-top:2rem;
+  margin-right:8rem ;
+  margin-left: 8rem;
+  height:500px;
+}
+
+.a{
+ transform: scale(1);
+}
+.b{
+  color: black;
+}
+
+/*button classı stilini app.js'ten i-button'da burdan alacak*/
+/*
+.i-button{
+    width: 6rem;
+    height: 2rem;
+}
+*/
+
+/*ikonların stili*/
+.i-icons{
+    margin-top: 3rem;
+    display: flex;
+    gap:0rem;
+}
+/*i-icons taki tüm image'ları targetlama*/
+.i-icons>*{
+    /*ikonları değiştirip şu anki hallerinin yarı boyutuna dönüştürüyoruz*/
+    transform: scale(0.5);
+    
+}
+.i-icons>*:hover{
+    cursor:pointer;
+}
+
+/*flex css'i sayfanın bölünmesini sağlıyor */
+.i-left{
+    flex: 1;
+    position: relative;
+}
+/*sağ taraftaki her itemin pozisyonu absolute*/
+/*bu divin içindeki herhangi birşey taşarsa sol tarafa taşması için z-index*/
+.i-left>*{
+    position: absolute;
+    z-index: 1;
+}
+.a1{
+  border-radius: 10px;
+}
+/*mavi png nin stili*/
+.i-left>:nth-child(1){
+    transform: scale(0.84);
+    left: -15%;
+    top:-9%;
+}
+.i-left > :nth-child(2) {
+    top: -4.6rem;
+    transform: scale(0.67);
+    left: -3rem;
+  }
+  .i-left > :nth-child(3) {
+    margin-top: 6.4rem;
+    border-radius: 10px;
+    max-width: 300px;
+    max-height: 300px;
+    transform: scale(1.4);
+    left: 22%;
+  }
+  .i-left > :nth-child(4) {
+    transform: scale(0.62);
+    top: -19%;
+    left: -24%;
+    border-radius: 50%;
+    padding: 0;
+  }
+/* en arkadaki  divin blurü*/
+.blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(212px);
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(60px);
+  }
+
+  @media screen and (max-width: 480px) {
+    /*bütün itemlar column da gözüküyor*/
+    .intro {
+      flex-direction: column;
+      gap: 7rem;
+      height: 64rem;
+    }
+  
+    .i-left {
+      transform: scale(0.8);
+      left: -3rem;
+    }
+    .i-left .blur {
+      display: none;
+    }
+    .floating-div:nth-of-type(1){
+      /* display: none; */
+      top: -7rem !important;;
+    }
+  }

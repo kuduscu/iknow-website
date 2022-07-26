@@ -1,0 +1,75 @@
+.services {
+    /*top ve bot a 0,sağ ve sola 3rem */
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 30rem;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+    margin-bottom: 13rem;
+    padding-top: 3rem;
+  }
+
+  .awesomee{
+    display: flex;
+    /*itemların aşağı doğru sıralanmasını sağlayan css flex-direction*/
+    flex-direction: column;
+    position: relative;
+  }
+
+  .awesomee > :nth-child(1) {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .awesomee > :nth-child(2) {
+    color: var(--purple1);
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .awesomee > :nth-child(3) {
+    color: var(--black);
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+
+  .s-button {
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1rem;
+  }
+  .cards {
+    position: relative;
+  }
+  .cards > * {
+    position: absolute;
+  }
+  
+  /* blur */
+  .s-blur2 {
+    left: 14rem;
+    top: 8rem;
+  }
+  
+  .s-blur1 {
+    top: 13rem;
+    left: -18rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    .services {
+      margin-top: 0;
+      flex-direction: column;
+      gap: 5rem;
+      height: 66rem;
+      padding: 0;
+    }
+  
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 17rem;
+    }
+    .cards > * {
+      position: static;
+    }
+  }

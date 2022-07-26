@@ -1,0 +1,160 @@
+/*Navbar'ın sağ ve sol divinin arasında biraz boşluk istendiğinden
+justify-content:space-between veriyoruz */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.n-wrapper {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+/*ardından iki tarafın da style'ını ayrı ayrı yapıyoruz*/
+
+/*sol taraftaki item'ların arasını 2rem verdik*/
+.n-left {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+}
+
+.n-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--purple1);
+}
+.n-name > :nth-child(1) {
+  margin-left: -30rem;
+  margin-right: -28rem;
+  transform: scale(0.14);
+  left: -25rem;
+  top: -8.9rem;
+}
+
+/*10vh verildiğinden dolayı sağ taraftaki itemların tamamı gözükmüyordu
+sağ tarafın stilini yapıp item'ların gözükmesi sağlandı. align-items:center*/
+.n-right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+    font-weight: 400; /*regular fontweight*/
+}
+.n-list {
+  flex: 10;
+  margin-top:1rem;
+}
+/*n-list classname'inin içibdeki ul ve li lerin style'ı için*/
+.n-list > ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: -1rem;
+}
+/*
+yukarıdaki itemlara mouse geldiğinde pointer olması için
+app.css te verilmiş renkleri kullanmak içib var()
+liste elemanlarını birer birer seçme için >ul>li
+*/
+.n-list > ul > li:hover {
+  cursor: pointer;
+  color: var(--purple1);
+}
+
+.n-button {
+  flex: 2;
+}
+/*bayrakla yazı arasına mesafe koymak için width*/
+.lang-menu {
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+  position: relative;
+}
+.lang-menu .selected-lang {
+  display: flex;   
+  justify-content: space-between;
+
+  cursor: pointer;
+}
+.lang-menu .selected-lang:before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url(https://flagcdn.com/w40/tr.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.lang-menu ul {
+  margin: 0;
+  padding: 0;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #f8f8f8;
+  position: absolute;
+  top: 45px;
+  right: 0px;
+  width: 125px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+
+.lang-menu ul li {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang-menu ul li a {
+  text-decoration: none;
+  width: 1215px;
+  padding: 5px 10px;
+  display: block;
+}
+
+.lang-menu ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/**/
+.tr:before {
+  background-image: url(https://flagcdn.com/w40/tr.png);
+}
+
+.en:before {
+  background-image: url(https://flagcdn.com/w40/us.png);
+}
+
+.lang-menu:hover ul {
+  display: block;
+}
+
+
+/*navbar listesinin responsive kısımda gözükmesini istemiyoruz o yüzden display none*/
+@media screen and (max-width: 480px) {
+  .n-list {
+    display: none;
+  }
+  .n-button {
+    display: none;
+  }
+}
