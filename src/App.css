@@ -1,45 +1,62 @@
-:root
-{
+:root {
   /*bu kısım iquality'nin renklerine göre düzenlenicek*/
-  --yellow: #F5C32C;
-    --orange : #FCA61F;
-    --black : #001A72;
-    --gray : #788097;
-    --blueCard : #DDF8FE;
-    --purple: rgb(238 210 255);
-    --purple1:#FF0000;
-    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
-    --purpleCard: #ff00005f;
-    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  --black: #001a72;
+  --gray: #788097;
+  --blueCard: #ddf8fe;
+  --purple: rgb(238 210 255);
+  --purple1: #ff0000;
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --purpleCard: #ff00005f;
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 /*tüm uygulama için*/
-.App{
-    padding: 0.5rem 3.5rem;
-    overflow: hidden;
-    font-family: 'Source Sans Pro';
-    /*text renkleri*/
-    color: var(--black);      
+.App {
+  padding: 0.5rem 3.5rem;
+  overflow: hidden;
+  font-family: "Source Sans Pro";
+  /*text renkleri*/
+  color: var(--black);
 }
 
-.button{
+.button {
   border-radius: 34px;
-  border:none;
-  color:white;
+  border: none;
+  color: white;
   font-size: 16px;
   padding: 11px 26px 11px 26px;
   background: var(--purple1);
   box-shadow: 0px 20px 24px 3px rgba(113, 43, 149, 0.456);
 }
-.button:hover{
+.button:hover {
   background: white;
-  cursor:pointer;
-  color:var(--black);
+  cursor: pointer;
+  color: var(--black);
   border: 1px solid var(--black);
 }
 
-  @media  screen and (max-width:480px){
-    .App{
-      padding: 0.5rem 1rem;
-    } 
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 0.5rem 1rem;
+    max-width: 100vh;
+    width: 76vh;
   }
+}
+@media screen and (max-width: 320px) {
+  .App {
+    padding: 0.5rem 1rem;
+    overflow: hidden;
+    max-width: 100vh;
+    width: 70vh;
+  }
+}
+@media screen and (max-width: 375px) {
+  .App {
+    padding: 0.5rem 1rem;
+    overflow: hidden;
+    max-width: 100vh;
+    width: 90vh;
 
+  }
+}
