@@ -135,10 +135,18 @@
       gap: 7rem;
       height: 64rem;
     }
+    .carousel{
+     transform: scale(0.4);
+     margin-top: -2rem;
+     margin-left: -17rem;
+     display: flex;
+     flex-direction: column;
+    }
   
     .i-left {
       transform: scale(0.8);
       left: -3rem;
+  
     }
     .i-left .blur {
       display: none;

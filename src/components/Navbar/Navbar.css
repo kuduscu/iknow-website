@@ -151,6 +151,9 @@ liste elemanlarını birer birer seçme için >ul>li
 
 /*navbar listesinin responsive kısımda gözükmesini istemiyoruz o yüzden display none*/
 @media screen and (max-width: 480px) {
+  .n-name{
+    margin-left: 2rem;
+  }
   .n-list {
     display: none;
   }

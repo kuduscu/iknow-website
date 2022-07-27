@@ -38,7 +38,35 @@
   }
 
   @media screen and (max-width: 480px){
+    .footer {
+      margin-top: 0;
+      flex-direction: column;
+      gap: 1rem;
+      width: 25rem;
+      position: absolute;
+      padding: 0;
+    }
+    .footer>img{
+      width: 700px;
+      height: 700px;
+  }
+  
+    .f-left {
+      margin-top: 1rem;
+      margin-left: -6rem;
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      transform: scale(0.7);
+    }
+
     .f-content{
-      transform: scale(.5);
+      
+      display: flex;
+      margin-top: 0rem;
+        position: absolute;
+      margin-left: -16rem;
+      flex-direction: column;
+      transform: scale(0.6);
     }
   }
