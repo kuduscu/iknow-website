@@ -27,7 +27,7 @@ const Services = () => {
       <div className="awesomee">
         <span style={{ color: darkMode ? "white" : "" }}>Verdiğimiz</span>
         <span>Hizmetler</span>
-        <span>
+        <span style={{ color: darkMode ? "white" : "" }}>
         Siz değerli müşterilerimize profesyonel çözüm ve 
           <br />
           hizmetlerimizi alanında uzman ekibimiz ile sunuyoruz.

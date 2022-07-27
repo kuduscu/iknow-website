@@ -1,10 +1,13 @@
 import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import iQuality from "../../img/iQuality.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
+import Tool1 from "../../img/tool1.png";
+import Tool2 from "../../img/tool2.png";
+import Tool3 from "../../img/tool3.png";
+import Tool4 from "../../img/tool4.png";
+import iQuality from "../../img/iQuality.png"
+import Tool5 from "../../img/tool5.png";
+import Tool6 from "../../img/tool6.png";
+import Tool7 from "../../img/tool7.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 
@@ -47,19 +50,25 @@ const Works = () => {
           className="w-mainCircle"
         >
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img src={Tool1} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={Tool2} alt="" />
           </div>
           <div className="w-iQ">
             <img src={iQuality} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <img src={Tool3} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="" />
+            <img src={Tool4} alt="" />
+          </div>
+          <div className="w-secCircle">
+            <img src={Tool5} alt="" />
+          </div>
+          <div className="w-secCircle">
+            <img src={Tool6} alt="" />
           </div>
         </motion.div>
         {/*arkaplan circle'ları*/}

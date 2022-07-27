@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import { themeContext } from "./Context";
 import { useContext } from "react";
 import ScrollToTop from "react-scroll-to-top";
+import { ReactComponent as MySVG } from "./logo.svg";
 
 function App() {
   /*renk değişimi kısmı için Context.js teki fonksiyonlar çekiliyor.*/
@@ -21,7 +22,7 @@ function App() {
         color: darkMode ? "white" : "",
       }}
     >
-      <ScrollToTop smooth component={<p style={{ color: "blue" }}>UP</p>} />
+      <ScrollToTop smooth component={<MySVG />} />
       <Navbar />
       <Intro />
       <Services />
