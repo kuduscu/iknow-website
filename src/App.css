@@ -36,11 +36,11 @@
   border: 1px solid var(--black);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .App {
     padding: 0.5rem 1rem;
     max-width: 100vh;
-    width: 76vh;
+    width: 94vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -51,12 +51,12 @@
     width: 70vh;
   }
 }
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   .App {
     padding: 0.5rem 1rem;
     overflow: hidden;
     max-width: 100vh;
-    width: 90vh;
+    width: 94vh;
 
   }
 }
