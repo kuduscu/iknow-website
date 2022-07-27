@@ -1,158 +1,119 @@
-/* bu kısmı da ikiye bölerek stilini yapıcaz */
-.intro{
-    display: flex;
-    height: 77vh;
-    margin-top: 6rem;
+.t-wrapper {
+  padding: 0 3rem 0 3rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
 }
-/*hap her elementin arasına ara koymamızı sağlar*/
-.i-right{
-    display: flex;
-    position: relative;
-    flex:1;
-    flex-direction: column;
-    gap:0rem;
+.t-heading {
+  align-self: start;
 }
-.i-name{
-    display:flex;
-    flex-direction: column;
+.t-heading > * {
+  font-size: 2rem;
+  font-weight: bold;
 }
-/*ilk olarak Hi i am kısmına stil vermek için i-name 'in ilk childini hedefliyoruz*/
-.i-name>:nth-child(1){
-    color:var(--purple1);
-    font-weight: bold;
-    font-size: 3rem;
-}
-.i-name>:nth-child(2){
-    color:var(--);
-    font-weight: bold;
-    font-size: 3rem;
-}
-.i-name>:nth-child(3){
-    font-weight: 100;
-    font-size: 14px;
-    color:var(--gray);
-    margin-top: 10px;
+.t-heading span:nth-of-type(2) {
+  color: var(--purple1);
 }
 
-
-.carousel {
-  width:1100px;
-  margin-top:2rem;
-  margin-right:8rem ;
-  margin-left: 8rem;
-  height:500px;
+.t-blur1 {
+  left: 38rem;
+  top: 16rem;
+}
+.t-blur2 {
+  top: 9rem;
+  left: 0;
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  width: 30rem;
+  height: 12rem;
+  background: rgba(255, 255, 255, 0.26);
+  border: 7px solid var(--blueCard);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+}
+.testimonial > img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+}
+.testimonial > span {
+  color: var(--gray);
 }
 
-.a{
- transform: scale(1);
-}
-.b{
-  color: black;
-}
-
-/*button classı stilini app.js'ten i-button'da burdan alacak*/
-/*
-.i-button{
-    width: 6rem;
-    height: 2rem;
-}
-*/
-
-/*ikonların stili*/
-.i-icons{
-    margin-top: 3rem;
-    display: flex;
-    gap:0rem;
-}
-/*i-icons taki tüm image'ları targetlama*/
-.i-icons>*{
-    /*ikonları değiştirip şu anki hallerinin yarı boyutuna dönüştürüyoruz*/
-    transform: scale(0.5);
-    
-}
-.i-icons>*:hover{
-    cursor:pointer;
+/* slider */
+.t-wrapper .swiper {
+  width: 100%;
+  height: 70%;
 }
 
-/*flex css'i sayfanın bölünmesini sağlıyor */
-.i-left{
-    flex: 1;
-    position: relative;
+.t-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/*sağ taraftaki her itemin pozisyonu absolute*/
-/*bu divin içindeki herhangi birşey taşarsa sol tarafa taşması için z-index*/
-.i-left>*{
-    position: absolute;
-    z-index: 1;
+
+.t-wrapper .swiper-pagination-bullet-active {
+  background: var(--orange);
 }
-.a1{
-  border-radius: 10px;
-}
-/*mavi png nin stili*/
-.i-left>:nth-child(1){
-    transform: scale(0.84);
-    left: -15%;
-    top:-9%;
-}
-.i-left > :nth-child(2) {
-    top: -4.6rem;
-    transform: scale(0.67);
-    left: -3rem;
-  }
-  .i-left > :nth-child(3) {
-    margin-top: 6.4rem;
-    border-radius: 10px;
-    max-width: 300px;
-    max-height: 300px;
-    transform: scale(1.4);
-    left: 22%;
-  }
-  .i-left > :nth-child(4) {
-    transform: scale(0.62);
-    top: -19%;
-    left: -24%;
-    border-radius: 50%;
+
+@media screen and (max-width: 480px) {
+  .t-wrapper {
     padding: 0;
+    gap: 4rem;
+    margin-bottom: 10rem;
   }
-/* en arkadaki  divin blurü*/
-.blur {
-    position: absolute;
-    width: 22rem;
-    height: 14rem;
-    border-radius: 50%;
-    background: #edd0ff;
-    filter: blur(212px);
-    z-index: -9;
-    top: -18%;
-    left: 56%;
-    filter: blur(60px);
+  .testimonial > img {
+    width: 70px;
+    height: 70px;
   }
+}
 
-  @media screen and (max-width: 480px) {
-    /*bütün itemlar column da gözüküyor*/
-    .intro {
-      flex-direction: column;
-      gap: 7rem;
-      height: 64rem;
-    }
-    .carousel{
-     transform: scale(0.4);
-     margin-top: -2rem;
-     margin-left: -17rem;
-     display: flex;
-     flex-direction: column;
-    }
-  
-    .i-left {
-      transform: scale(0.8);
-      left: -3rem;
-  
-    }
-    .i-left .blur {
-      display: none;
-    }
-    .floating-div:nth-of-type(1){
-      /* display: none; */
-      top: -7rem !important;;
-    }
+@media screen and (max-width: 320px) {
+  .t-heading{
+    font-size: 15px;
   }
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    margin-left: -1.5rem;
+    width: 290px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.26);
+    border: 2px solid var(--purple1);
+    box-shadow: var(--boxShadow);
+  }
+  .t-wrapper {
+    padding: 0rem;
+    gap: 0rem;
+    max-width: 320px;
+    width: 319px;
+    margin-bottom: 6rem;
+  }
+  .testimonial > img {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 375px) {
+}
+@media screen and (max-width: 425px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 1440px) {
+}

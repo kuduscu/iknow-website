@@ -1,4 +1,13 @@
 import "./Intro.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Pagination } from "swiper";
+import "swiper/css/pagination";
+import profilePic1 from "../../img/profile1.jpg";
+import profilePic2 from "../../img/profile2.jpg";
+import profilePic3 from "../../img/profile3.jpg";
+import profilePic4 from "../../img/profile4.jpg";
+/*
 import { Carousel } from "react-bootstrap";
 import image1 from "../../img/image1.jpg";
 import image2 from "../../img/image2.jpg";
@@ -6,6 +15,7 @@ import image3 from "../../img/image3.jpg";
 import intro1 from "../../img/intro1.png";
 import intro2 from "../../img/intro2.png";
 import intro3 from "../../img/intro3.png";
+*/
 /*sağ taraf için*/
 /*
 import Vector1 from "../../img/Vector1.png";
@@ -25,6 +35,32 @@ import { motion } from "framer-motion";
 
 /*çağırdığımız floatingdiv componentine crown'ı prop olarak veriyoruz */
 function Intro() {
+
+
+  //
+  const clients = [
+    {
+      img: profilePic1,
+      review:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+    },
+    {
+      img: profilePic2,
+      review:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+    },
+    {
+      img: profilePic3,
+      review:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+    },
+    {
+      img: profilePic4,
+      review:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+    },
+  ];
+  //
   //animasyonlara başlamadan önce transition tanımlıyoruz
   const transition = { duration: 2, type: "spring" };
 
@@ -33,65 +69,36 @@ function Intro() {
   const darkMode = theme.state.darkMode;
 
   return (
-    <Carousel fade={true} pause={"hover"}>
-      <Carousel.Item interval={2000}>
-        <img className="d-block w-100" src={image1} alt="First slide" />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>
-            Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla
-            vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit
-            libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a
-            pharetra augue mollis interdum.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={2000}>
-        <img className="d-block w-100" src={image2} alt="Third slide" />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <button>aaa</button>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={2000}>
-        <img className="d-block w-100" src={image3} alt="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={2000}>
-        <img className="a" src={intro1} alt="Forth slide" />
-        <Carousel.Caption>
-          <h3>Our Workflow</h3>
-          <p className="b">
-            Our experts start with first answering your requested skills and
-            then create dedicated team for your needs.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={2000}>
-        <img className="a" src={intro2} alt="Fifth slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={2000}>
-        <img className="a" src={intro3} alt="Sixth slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    <div className="t-wrapper" id="testimonial">
+      <div className="t-heading">
+        <span>Çalışanlar </span>
+        <span>veya </span>
+        <span>giriş kısmına slayt gösterisi olacak şekilde kullanılabilir.</span>
+        <div
+          className="blur t-blur1"
+          style={{ background: "var(--purple)" }}
+        ></div>
+        <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
+      </div>
+      <Swiper
+        // install Swiper modules
+        modules={[Pagination]}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+      >
+         {/*clients'ı maplayıp her client için işlem yapıyoruz*/}
+        {clients.map((client, index) => { 
+          return (
+            <SwiperSlide key={index}>
+              <div className="testimonial">
+                <img src={client.img} alt="" /> 
+                <span>{client.review}</span>
+              </div>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    </div>
   );
 }
 

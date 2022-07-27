@@ -41,11 +41,6 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="testimonial" spy={true} smooth={true}>
-                Kadromuz
-              </Link>
-            </li>
-            <li>
               <div className="lang-menu">
                 <div className="selected-lang">
                   Türkçe
