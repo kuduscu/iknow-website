@@ -60,8 +60,8 @@
   left: 10.5rem;
 }
 .w-mainCircle > :nth-child(2) {
-  left: -3rem;
-  top: 5rem;
+  left: -2rem;
+  top: 4rem;
 }
 .w-mainCircle > :nth-child(3) {
   left: 6rem;
@@ -72,16 +72,20 @@
   top: 5rem;
 }
 .w-mainCircle > :nth-child(5) {
-  left: 10.5rem;
-  top: 14rem;
+  left: 11.5rem;
+  top: 12rem;
 }
 .w-mainCircle > :nth-child(6) {
-  left: 1.5rem;
-  top: -2rem;
+  left: 2.8rem;
+  top: -2.3rem;
 }
 .w-mainCircle > :nth-child(7) {
-  left: 1.5rem;
-  top: 14rem;
+  left:-1rem;
+  top: 11rem;
+}
+.w-mainCircle > :nth-child(8) {
+  left: 5rem;
+  top: 14.6rem;
 }
 
 /*ikinci circle*/
@@ -129,12 +133,12 @@
     z-index: -1;
 }
 .blueCircle{
-    background: #1949B8;
+    background: #FF0000;
     left: 18rem;
     top:0rem;
 }
 .yellowCircle{
-    background: #F5C32C;
+    background: #001A72;
     left: 18rem;
     top:8rem;
 }

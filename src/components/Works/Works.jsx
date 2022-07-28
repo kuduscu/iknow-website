@@ -70,6 +70,9 @@ const Works = () => {
           <div className="w-secCircle">
             <img src={Tool6} alt="" />
           </div>
+          <div className="w-secCircle">
+            <img src={Tool7} alt="" />
+          </div>
         </motion.div>
         {/*arkaplan circle'ları*/}
         <div className="w-backCircle blueCircle"></div>
