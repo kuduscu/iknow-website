@@ -157,7 +157,30 @@ liste elemanlarını birer birer seçme için >ul>li
   .n-list {
     display: none;
   }
+  .n-list ul li{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .n-name{
+    margin-left: 2rem;
+  }
+  .n-list {
+    display: none;
+  }
   .n-button {
     display: none;
   }
+
 }
+@media screen and (min-width: 767px) {
+  .n-name{
+    margin-left: 2rem;
+  }
+
+}
+
+
+
+

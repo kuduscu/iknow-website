@@ -3,10 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
-import profilePic1 from "../../img/profile1.jpg";
-import profilePic2 from "../../img/profile2.jpg";
-import profilePic3 from "../../img/profile3.jpg";
-import profilePic4 from "../../img/profile4.jpg";
+import profilePic1 from "../../img/image1.jpg";
+import profilePic2 from "../../img/image2.jpg";
+import profilePic3 from "../../img/image3.jpg";
+import profilePic4 from "../../img/intro1.png";
 /*
 import { Carousel } from "react-bootstrap";
 import image1 from "../../img/image1.jpg";
@@ -90,9 +90,9 @@ function Intro() {
         {clients.map((client, index) => { 
           return (
             <SwiperSlide key={index}>
-              <div className="testimonial">
+              <div className="testimonial" >
                 <img src={client.img} alt="" /> 
-                <span>{client.review}</span>
+                <span style={{ color: darkMode ? "white" : "" }}>{client.review}</span>
               </div>
             </SwiperSlide>
           );
