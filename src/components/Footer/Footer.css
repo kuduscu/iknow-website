@@ -270,6 +270,9 @@ a {
 
 /* Media Query For different screens */
 @media (min-width:320px) and (max-width:479px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  .footer {
+    margin-top:7rem;
+}
   .footer-content {
     margin-left: auto;
     margin-right: auto;
@@ -283,6 +286,9 @@ a {
   }
 }
 @media (min-width:480px) and (max-width:599px)  { /* smartphones, Android phones, landscape iPhone */
+  .footer {
+    margin-top:7rem;
+}
   .footer-content {
     margin-left: auto;
     margin-right: auto;
@@ -297,6 +303,9 @@ a {
   }
 }
 @media (min-width:600px) and (max-width: 799px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .footer {
+    margin-top:7rem;
+}
   .footer-content {
     margin-left: auto;
     margin-right: auto;
@@ -307,6 +316,9 @@ a {
 }
 
 @media (min-width:800px) and (max-width: 1023px) {
+  .footer {
+    margin-top:7rem;
+}
   .footer-content {
       margin-left: auto;
       margin-right: auto;
@@ -328,6 +340,9 @@ a {
   }
 }
 @media (min-width:1024px) and (max-width: 1199px) {
+  .footer {
+    margin-top:4rem;
+}
   .footer-content {
       margin-left: auto;
       margin-right: auto;
@@ -350,6 +365,9 @@ a {
 }
 
 @media (min-width:1200px) and (max-width: 1439px){
+  .footer {
+    margin-top:3rem;
+}
   .footer-content {
     margin-left: auto;
     margin-right: auto;

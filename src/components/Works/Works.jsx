@@ -21,10 +21,10 @@ const Works = () => {
       <div className="w-left">
         <div className="awesome">
           <span style={{ color: darkMode ? "white" : "" }}>
-            Projeler 
+             Test Otomasyon 
           </span>
-          <span>veya Sponsorlar</span>
-          <spane>
+          <span>Araçlarımız</span>
+          <spane style={{ color: darkMode ? "white" : "" }}>
             Lorem ispum is simpley dummy text of printing of printing Lorem
             <br />
             ispum is simpley dummy text of printingLorem ispum is simpley dummy

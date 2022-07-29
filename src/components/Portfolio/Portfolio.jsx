@@ -15,9 +15,15 @@ const Portfolio = () => {
     <div className="portfolio" id="Portfolio">
       {/*heading*/}
       <span style={{ color: darkMode ? "white" : "" }}>Müşterilerimiz</span>
-
-      <span>
+      <span>&Örnek Projelerimiz</span>
+      <span style={{ color: darkMode ? "white" : "" }}>
         Birçok uluslararası firma ile projeler gerçekleştirmiş bulunuyoruz.
+        <br></br>
+        Web ve Mobil çözümlere ait test yönetimi ve otomasyonları ile ilgili
+        demolarımızı paylaşabiliriz.
+        <br></br>
+        Ayrıca API, DB sistemleri gibi uçtan uca test otomasyonları
+        gerçekleştirmekteyiz.
       </span>
       {/*slider*/}
       <Swiper

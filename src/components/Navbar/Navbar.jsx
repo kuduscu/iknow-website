@@ -5,6 +5,7 @@ import "./Navbar.css";
 import { Link } from "react-scroll";
 import img1 from "../../img/iQuality1.png";
 import img2 from "../../img/iQuality12.png";
+import Sidebar from "../Sidebar/Sidebar";
 
 function Navbar() {
   /*Yapılacak projedeki navbarın 2 kısmı var burda da ikiye bölücez*/
@@ -32,12 +33,12 @@ function Navbar() {
             </li>
             <li>
               <Link to="works" spy={true} smooth={true}>
-                Projeler
+                Araçlar
               </Link>
             </li>
             <li>
               <Link to="portfolio" spy={true} smooth={true}>
-                Müşterilerimiz
+              Projeler
               </Link>
             </li>
             <li>
@@ -55,6 +56,7 @@ function Navbar() {
                 </ul>
               </div>
             </li>
+        
           </ul>
         </div>
       </div>

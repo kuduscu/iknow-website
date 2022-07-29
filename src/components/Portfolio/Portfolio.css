@@ -9,10 +9,21 @@
   /*heading*/
   
   .portfolio span:nth-of-type(1) {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .portfolio span:nth-of-type(2) {
     color: var(--purple1);
     font-size: 2.5rem;
     font-weight: bold;
   }
+
+  .portfolio span:nth-of-type(3) {
+    color: var(--black);
+    margin-top: 1rem;
+  }
+
 
   .portfolio .swiper{
     /*bütün slaytlar bir ekranda görünebilir olsun diye*/
@@ -35,10 +46,10 @@
 
   @media (min-width: 320px) and (max-width: 479px) {
     .portfolio img {
-      transform: scale(0.7);  
+      transform: scale(0.6);  
     }
     .portfolio-slider {
-      width: 270%;
+      width: 250%;
     }
     }
   
