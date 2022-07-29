@@ -149,8 +149,7 @@ liste elemanlarını birer birer seçme için >ul>li
 }
 
 
-/*navbar listesinin responsive kısımda gözükmesini istemiyoruz o yüzden display none*/
-@media screen and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 479px){
   .n-name{
     margin-left: 2rem;
   }
@@ -162,8 +161,8 @@ liste elemanlarını birer birer seçme için >ul>li
   }
 }
 
-@media screen and (max-width: 767px) {
-  .n-name{
+@media (min-width: 480px) and (max-width: 599px){
+    .n-name{
     margin-left: 2rem;
   }
   .n-list {
@@ -172,15 +171,88 @@ liste elemanlarını birer birer seçme için >ul>li
   .n-button {
     display: none;
   }
-
 }
-@media screen and (min-width: 767px) {
+
+@media (min-width: 600px) and (max-width: 799px){
   .n-name{
-    margin-left: 2rem;
+    margin-left: 2rem;  
   }
-
+  .n-list {
+    display: none;
+  }
+  
 }
 
+@media (min-width: 800px) and (max-width: 1023px){
+  .n-name{
+    margin-left: 2rem;  
+  }
+  .n-list > ul {
+    display: flex;
+    gap: 0.7rem;
+    margin-right: 1rem;
 
+  }
+  .n-left {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+  }
+}
 
+@media (min-width: 1024px) and (max-width: 1199px){
+  .n-name{
+    margin-left: 2rem;  
+  }
+  .n-list > ul {
+    display: flex;
+    gap: 1rem;
+    margin-right: 2.5rem;
 
+  }
+  .n-left {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .n-name{
+    margin-left: 2rem;  
+  }
+  .n-list > ul {
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 2.5rem;
+
+  }
+  .n-left {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+  }
+}
+/*
+@media (min-width: 1440px) and (max-width: 1600px) {
+ .n-name{
+    margin-left: 2rem;  
+  }
+  .n-list > ul {
+    display: flex;
+    gap: 2.5rem;
+    margin-right: 2.5rem;
+
+  }
+  .n-left {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+*/

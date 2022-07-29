@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./Footer.css";
 import iQuality from "../../img/iQuality.png";
-
+import { Link } from "react-scroll";
 const Footer = () => {
   return (
     <div class="pg-footer">
@@ -27,16 +27,22 @@ const Footer = () => {
               </a>
             </div>
             <div class="footer-menu1">
-              <h2 class="footer-menu-name"> Get Started</h2>
+              <h2 class="footer-menu-name">İÇERİK</h2>
               <ul id="menu-get-started" class="footer-menu-list">
                 <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                  <a href="#">Start</a>
+                <Link to="services" spy={true} smooth={true}>
+                Hizmetler
+              </Link>
                 </li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                  <a href="#">Documentation</a>
+                <Link to="works" spy={true} smooth={true}>
+                Projeler
+              </Link>
                 </li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                  <a href="#">Installation</a>
+                <Link to="portfolio" spy={true} smooth={true}>
+                Müşterilerimiz
+              </Link>
                 </li>
               </ul>
             </div>
