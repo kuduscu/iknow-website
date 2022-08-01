@@ -3,10 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
-import profilePic1 from "../../img/image1.jpg";
-import profilePic2 from "../../img/image2.jpg";
-import profilePic3 from "../../img/image3.jpg";
-import profilePic4 from "../../img/intro1.png";
+import profilePic5 from "../../img/11.png";
+import profilePic6 from "../../img/12.png";
+import profilePic7 from "../../img/13.png";
+import profilePic8 from "../../img/14.png";
 /*
 import { Carousel } from "react-bootstrap";
 import image1 from "../../img/image1.jpg";
@@ -39,25 +39,25 @@ function Intro() {
 
   //
   const clients = [
-    {
-      img: profilePic1,
+{
+      img: profilePic5,
       review:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
     },
     {
-      img: profilePic2,
+      img: profilePic6,
       review:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
     },
     {
-      img: profilePic3,
+      img: profilePic7,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+        "Our Workflow: Our experts start with first answering your requested skills and then create dedicated team for your needs. Managing project together with agile methodologies and works according to your scope. Release product on time and high quality with covering all needs. ",
     },
     {
-      img: profilePic4,
+      img: profilePic8,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+        "We offer our customers : Subject matter experts ,High product quality, Speed up test management ,Increase communication, Lower cost"
     },
   ];
   //
