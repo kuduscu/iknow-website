@@ -15,7 +15,7 @@ const Portfolio = () => {
     <div className="portfolio" id="Portfolio">
       {/*heading*/}
       <span style={{ color: darkMode ? "white" : "" }}>Müşterilerimiz</span>
-      <span>&Örnek Projelerimiz</span>
+      <span>& Örnek Projelerimiz</span>
       <span style={{ color: darkMode ? "white" : "" }}>
         Birçok uluslararası firma ile projeler gerçekleştirmiş bulunuyoruz.
         <br></br>

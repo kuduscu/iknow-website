@@ -45,8 +45,8 @@ const Services = () => {
         >
           <Card
             emoji={hizmetler1}
-            heading={"Web Uygulama Geliştirme"}
-            detail={"Html, Css, J"}
+            heading={"Web Uygulama Test&Otomasyon"}
+            detail={"Selenium"}
           />
         </motion.div>
         {/*second card*/}
@@ -57,8 +57,8 @@ const Services = () => {
         >
           <Card
             emoji={hizmetler2}
-            heading={"Mobil Uygulama Geliştirme"}
-            detail={"Html, Css, J"}
+            heading={"Nesne Yönelimli Programlama"}
+            detail={"Python"}
           />
         </motion.div>
         {/*3rd card*/}
@@ -67,7 +67,7 @@ const Services = () => {
           whileInView={{ left: "3rem", top: "19rem" }}
           transition={transition}
         >
-          <Card emoji={hizmetler3} heading={"bbb"} detail={"Html, Css,"} />
+          <Card emoji={hizmetler3} heading={"Web Tasarım& Mobil Uygulamalar"} detail={"C#"} />
         </motion.div>
         {/*4th card*/}
         <motion.div
@@ -75,7 +75,7 @@ const Services = () => {
           whileInView={{ left: "16rem", top: "-2rem" }}
           transition={transition}
         >
-          <Card emoji={hizmetler4} heading={"zzzzzz"} detail={"Html, Css, J"} />
+          <Card emoji={hizmetler4} heading={"Proje Yönetimi"} detail={"Azıure Devops"} />
         </motion.div>
         {/*5th card*/}
         <motion.div
@@ -83,7 +83,7 @@ const Services = () => {
           whileInView={{ left: "16rem", top: "19rem" }}
           transition={transition}
         >
-          <Card emoji={hizmetler5} heading={"aaaa"} detail={"Html, Css, "} />
+          <Card emoji={hizmetler5} heading={"Hata İzleme & Proje Yönetimi"} detail={"Jira"} />
         </motion.div>
         {/*6th card*/}
         <motion.div
@@ -91,7 +91,7 @@ const Services = () => {
           whileInView={{ left: "29rem", top: "-2rem" }}
           transition={transition}
         >
-          <Card emoji={hizmetler6} heading={"dddd"} detail={"Html, Css, "} />
+          <Card emoji={hizmetler6} heading={"Uygulama Testleri"} detail={"Appium"} />
         </motion.div>
         {/*7th card*/}
         <motion.div
@@ -99,7 +99,7 @@ const Services = () => {
           whileInView={{ left: "29rem", top: "19rem" }}
           transition={transition}
         >
-          <Card emoji={hizmetler7} heading={"bbb"} detail={"Html, Css, "} />
+          <Card emoji={hizmetler7} heading={"Kurumsal Kaynak Planlama"} detail={"SAP ERP"} />
         </motion.div>
 
         <div

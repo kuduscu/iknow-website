@@ -146,9 +146,9 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .works {
     flex-direction: column;
-    height: 55rem;
+    height: 57rem;
     padding: 0;
-    gap: 5rem;
+    gap: 1rem;
   }
 
   .w-right {
@@ -191,9 +191,9 @@
 @media (min-width: 600px) and (max-width: 799px){
   .works {
     flex-direction: column;
-    height: 45rem;
+    height: 50rem;
     padding: 0;
-    gap: 5rem;
+    gap: 2rem;
   }
 
   .w-right {

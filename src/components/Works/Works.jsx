@@ -25,14 +25,17 @@ const Works = () => {
           </span>
           <span>Araçlarımız</span>
           <spane style={{ color: darkMode ? "white" : "" }}>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
-            <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
-            <br />
-            y dummy text of printingLorem
-            <br />
-            ispum is simpley dummy text of printing
+
+            TestOps is a new methodology that promotes close collaboration between QA
+            <br/>
+            Development and Operation teams in order to reduce development cost and ensure 
+            <br/>
+            quality.TestOps gives new responsibilities to QA Teams like maintain the
+            <br/>
+            automated testing environment and monitor all systems both in test and in 
+            <br/>
+            production.
+
           </spane>
           <div
             className="blur s-blur1"

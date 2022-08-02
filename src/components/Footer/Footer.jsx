@@ -93,7 +93,7 @@ const Footer = () => {
             </div>
           </div>
           <div class="footer-social-links">
-            <a class="footer-social-link linkedin" href="#" target="_blank">
+            <a class="footer-social-link linkedin" href="https://www.linkedin.com/company/iknowtechnology/" target="_blank">
               <span class="hidden-link-text">Linkedin</span>
               <svg
                 class="footer-social-icon-svg"

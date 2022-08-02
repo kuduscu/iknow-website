@@ -70,16 +70,13 @@ function Intro() {
 
   return (
     <div className="t-wrapper" id="testimonial">
-      <div className="t-heading">
-        <span>Çalışanlar </span>
-        <span>veya </span>
-        <span>giriş kısmına slayt gösterisi olacak şekilde kullanılabilir.</span>
+    
         <div
           className="blur t-blur1"
           style={{ background: "var(--purple)" }}
         ></div>
         <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
-      </div>
+   
       <Swiper
         // install Swiper modules
         modules={[Pagination]}
